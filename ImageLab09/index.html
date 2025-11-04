@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
-     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-sphere position="0 1.25 -5" radius="1.50" color="white"></a-sphere>
-      <a-sphere position="0 3.25 -5" radius="1.00" color="white"></a-sphere>
-      <a-sphere position="0 4.75 -5" radius="0.75" color="white"></a-sphere>
-      <!-- <a-sky color="#ECECEC"></a-sky> -->
-      <!-- the enviroment entity includes a sky. Choose from the presets"none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris, moon" -->
-      <a-entity environment="preset: japan; dressingAmount: 1"></a-entity>
-    </a-scene>
-  </body>
+
+<head>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <!-- Small lights to help the snowman read well -->
+    <a-ambient-light intensity="0.7"></a-ambient-light>
+    <a-directional-light position="-1 2 1" intensity="0.6"></a-directional-light>
+
+    <!-- Snowman grouped so it can be moved as one entity -->
+    <a-entity id="snowman" position="0 0 -5">
+      <!-- Bottom, middle, head -->
+      <a-sphere position="0 1.25 0" radius="1.25" color="#FFFFFF"></a-sphere>
+      <a-sphere position="0 3.05 0" radius="0.9" color="#FFFFFF"></a-sphere>
+      <a-sphere id="head" position="0 4.25 0" radius="0.6" color="#FFFFFF"></a-sphere>
+
+      <!-- Eyes -->
+      <a-sphere position="-0.18 4.35 0.52" radius="0.06" color="#000"></a-sphere>
+      <a-sphere position="0.18 4.35 0.52" radius="0.06" color="#000"></a-sphere>
+
+      <!-- Carrot nose (cone pointing forward) -->
+      <a-cone position="0 4.25 0.72" radius-bottom="0.07" radius-top="0.02" height="0.45" color="#FF8C00"
+        rotation="90 0 0"></a-cone>
+
+      <!-- Mouth (small coal pieces) -->
+      <a-sphere position="-0.18 4.05 0.55" radius="0.04" color="#000"></a-sphere>
+      <a-sphere position="-0.06 4.00 0.58" radius="0.04" color="#000"></a-sphere>
+      <a-sphere position="0.06 4.00 0.58" radius="0.04" color="#000"></a-sphere>
+      <a-sphere position="0.18 4.05 0.55" radius="0.04" color="#000"></a-sphere>
+
+      <!-- Buttons on chest -->
+      <a-sphere position="0 3.4 0.82" radius="0.07" color="#000"></a-sphere>
+      <a-sphere position="0 3.0 0.9" radius="0.07" color="#000"></a-sphere>
+      <a-sphere position="0 2.6 0.95" radius="0.07" color="#000"></a-sphere>
+
+      <!-- Arms (thin cylinders rotated outward) -->
+      <a-cylinder position="-1.05 3.05 0" radius="0.07" height="1.6" color="brown" rotation="0 0 45"></a-cylinder>
+      <a-cylinder position="1.05 3.05 0" radius="0.07" height="1.6" color="brown" rotation="0 0 -45"></a-cylinder>
+
+      <!-- Hat (brim + top) -->
+      <a-cylinder position="0 4.8 0" radius="0.42" height="0.06" color="#111"></a-cylinder>
+      <a-cylinder position="0 5.05 0" radius="0.28" height="0.5" color="#111"></a-cylinder>
+
+
+    <!-- the environment entity includes a sky. Choose from the presets: none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris, moon -->
+    <a-entity environment="preset: japan; dressingAmount: 1"></a-entity>
+  </a-scene>
+</body>
+
 </html>
