@@ -1,15 +1,297 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
-  </head>
-  <body>
-    <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
-  </body>
+
+<head>
+  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+
+
+      <a-asset-item id="Mushroom" src="assets/Mushrooms1.obj"></a-asset-item>
+      <img id="cyan-texture" src="assets/Cyan.jpg">
+      <img id="stone-texture" src="assets/stone.jpg">
+      <a-asset-item id="SpookyTree" src="assets/Tree_Spooky2_Low.obj"></a-asset-item>
+
+    </a-assets>
+
+    <a-sky src="assets/360ForestEditted.jpg"></a-sky>
+
+     <a-cylinder position="0 -0.8 0" radius="1.5" height="0.3" material="src: #stone-texture" rotation="0 0 0"></a-cylinder>
+    <a-cylinder position="-2.5 -0.8 1.5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-5 -0.8 3" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-7.5 -0.8 5.5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-10 -0.8 8" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-12.5 -0.8 11" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-15 -0.8 14" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-16.5 -0.8 17" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-18 -0.8 20" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-20 -0.8 23" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-22 -0.8 26" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-25 -0.8 28" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-28 -0.8 30" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-31 -0.8 32.5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-34 -0.8 35" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-36 -0.8 37.5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-38 -0.8 40" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-40 -0.8 42.5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-42 -0.8 45" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-39 -0.8 46.5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-36 -0.8 48" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-32 -0.8 49" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-28 -0.8 50" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-24 -0.8 49" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-20 -0.8 48" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-16 -0.8 46" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-12 -0.8 44" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-9 -0.8 41" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-6 -0.8 38" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-2 -0.8 36" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="2 -0.8 34" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="5 -0.8 36" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="8 -0.8 38" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="11 -0.8 40" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="14 -0.8 42" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="18 -0.8 43" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="22 -0.8 44" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="26 -0.8 45" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="30 -0.8 46" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="34 -0.8 45" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="38 -0.8 44" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="41 -0.8 42" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="44 -0.8 40" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="46 -0.8 37" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="48 -0.8 34" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="48 -0.8 30" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="48 -0.8 26" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="47 -0.8 22" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="46 -0.8 18" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="44 -0.8 14" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="42 -0.8 10" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="39 -0.8 7" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="36 -0.8 4" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="32 -0.8 2" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="28 -0.8 0" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="24 -0.8 -2" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="20 -0.8 -4" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="16 -0.8 -6" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="12 -0.8 -8" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="8 -0.8 -10" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="4 -0.8 -12" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="0 -0.8 -14" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-4 -0.8 -16" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-8 -0.8 -18" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-12 -0.8 -20" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-15 -0.8 -23" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-18 -0.8 -26" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-21 -0.8 -29" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-24 -0.8 -32" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-27 -0.8 -35" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-30 -0.8 -38" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-33 -0.8 -41" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-36 -0.8 -44" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-39 -0.8 -46" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-42 -0.8 -48" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-44 -0.8 -44" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-46 -0.8 -40" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-47 -0.8 -36" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-48 -0.8 -32" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-48 -0.8 -28" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-48 -0.8 -24" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-47 -0.8 -20" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-46 -0.8 -16" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-44 -0.8 -12" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-42 -0.8 -8" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-39 -0.8 -5" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-36 -0.8 -2" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-33 -0.8 1" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-30 -0.8 4" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-27 -0.8 7" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-24 -0.8 10" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-21 -0.8 13" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-18 -0.8 16" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-22 -0.8 18" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-26 -0.8 20" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-30 -0.8 20" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-34 -0.8 20" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-38 -0.8 18" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-41 -0.8 21" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-44 -0.8 24" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-45 -0.8 28" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="-46 -0.8 32" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="23 -0.8 -7" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="26 -0.8 -10" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="30 -0.8 -13" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="34 -0.8 -16" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="37 -0.8 -19" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="40 -0.8 -22" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="42 -0.8 -26" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="44 -0.8 -30" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="45 -0.8 -34" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="46 -0.8 -38" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="44 -0.8 -42" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="42 -0.8 -46" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="38 -0.8 -47" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="34 -0.8 -48" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="30 -0.8 -46" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="26 -0.8 -44" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="23 -0.8 -41" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="20 -0.8 -38" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+    <a-cylinder position="17 -0.8 -35" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
+
+    
+    <a-obj-model src="#Mushroom" scale="0.03 0.02 0.03" material="src: #cyan-texture"></a-obj-model>
+
+    <a-obj-model src="#Mushroom" position="-38 0 22" rotation="0 234 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="43 0 -29" rotation="0 312 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-47 0 -18" rotation="0 178 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="12 0 38" rotation="0 89 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-23 0 -42" rotation="0 256 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="49 0 15" rotation="0 145 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-34 0 48" rotation="0 67 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="27 0 -36" rotation="0 201 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-8 0 -27" rotation="0 334 0" scale="0.034 0.023 0.034"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="41 0 -45" rotation="0 123 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-46 0 31" rotation="0 289 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="18 0 -9" rotation="0 45 0" scale="0.025 0.017 0.025"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-31 0 -38" rotation="0 178 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="48 0 44" rotation="0 312 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-14 0 19" rotation="0 223 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="36 0 -14" rotation="0 156 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-42 0 -47" rotation="0 89 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="25 0 8" rotation="0 267 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-19 0 49" rotation="0 134 0" scale="0.034 0.023 0.034"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="44 0 -24" rotation="0 345 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-48 0 13" rotation="0 201 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="32 0 -35" rotation="0 78 0" scale="0.025 0.017 0.025"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-7 0 42" rotation="0 290 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="21 0 -48" rotation="0 167 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-36 0 -8" rotation="0 234 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="47 0 33" rotation="0 123 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-26 0 -19" rotation="0 45 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="14 0 46" rotation="0 312 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-41 0 37" rotation="0 189 0" scale="0.034 0.023 0.034"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="49 0 -41" rotation="0 267 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-13 0 -31" rotation="0 145 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="37 0 20" rotation="0 78 0" scale="0.025 0.017 0.025"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-29 0 -49" rotation="0 223 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="9 0 -13" rotation="0 334 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-44 0 26" rotation="0 156 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="28 0 -46" rotation="0 89 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-17 0 7" rotation="0 245 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="42 0 45" rotation="0 201 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-48 0 -25" rotation="0 123 0" scale="0.034 0.023 0.034"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="31 0 14" rotation="0 67 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-35 0 -43" rotation="0 290 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="46 0 -7" rotation="0 178 0" scale="0.025 0.017 0.025"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-9 0 34" rotation="0 312 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="22 0 -37" rotation="0 234 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-25 0 50" rotation="0 145 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="45 0 -19" rotation="0 89 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-39 0 41" rotation="0 267 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="16 0 -26" rotation="0 356 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-47 0 36" rotation="0 189 0" scale="0.034 0.023 0.034"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="35 0 -50" rotation="0 123 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="8 0 -12" rotation="0 67 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-15 0 6" rotation="0 234 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="11 0 18" rotation="0 145 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-6 0 -19" rotation="0 312 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="19 0 -8" rotation="0 89 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-13 0 14" rotation="0 201 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="4 0 -16" rotation="0 267 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-18 0 -4" rotation="0 178 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="14 0 9" rotation="0 123 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-9 0 -13" rotation="0 45 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="7 0 15" rotation="0 290 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-16 0 -10" rotation="0 156 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="17 0 -6" rotation="0 334 0" scale="0.028 0.019 0.028"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-5 0 17" rotation="0 223 0" scale="0.032 0.021 0.032"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="13 0 -14" rotation="0 78 0" scale="0.026 0.017 0.026"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-11 0 8" rotation="0 189 0" scale="0.033 0.022 0.033"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="6 0 -11" rotation="0 245 0" scale="0.029 0.019 0.029"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-14 0 -7" rotation="0 134 0" scale="0.031 0.021 0.031"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="10 0 12" rotation="0 67 0" scale="0.027 0.018 0.027"
+      material="src: #cyan-texture"></a-obj-model>
+    <a-obj-model src="#Mushroom" position="-8 0 -15" rotation="0 312 0" scale="0.030 0.020 0.030"
+      material="src: #cyan-texture"></a-obj-model>
+
+
+  </a-scene>
+</body>
+
+
+
+</a-scene>
+</body>
+
 </html>
