@@ -7,13 +7,13 @@
 
 <body>
 
-  <a-scene>
+  <a-scene fog="type: exponential; color: #0d1f0d; density: 0.003">
     <a-assets>
 
 
       <a-asset-item id="Mushroom" src="assets/Mushrooms1.obj"></a-asset-item>
       <img id="cyan-texture" src="assets/Cyan.jpg">
-      <img id="stone-texture" src="assets/stone.jpg">
+      <img id="stone-texture" src="assets/moreyellow.jpg">
       <a-asset-item id="SpookyTree" src="assets/Tree_Spooky2_Low.obj"></a-asset-item>
       <img id="TreeTexture" src="assets/glowpattern.jpg">
 
@@ -23,6 +23,7 @@
 
     <a-obj-model src="#SpookyTree" position="3 -3 8" scale="0.2 0.4 0.2" material="src: #TreeTexture"></a-obj-model>
     
+
 
 
     <a-cylinder position="0 -0.8 0" radius="1.5" height="0.3" material="src: #stone-texture"></a-cylinder>
@@ -290,11 +291,6 @@
       material="src: #cyan-texture"></a-obj-model>
     <a-obj-model src="#Mushroom" position="-8 0 -15" rotation="0 312 0" scale="0.030 0.020 0.030"
       material="src: #cyan-texture"></a-obj-model>
-
-
-  </a-scene>
-</body>
-
 
 
 </a-scene>
