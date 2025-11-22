@@ -3,6 +3,7 @@
 
 <head>
   <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+
 </head>
 
 <body>
@@ -16,13 +17,116 @@
       <img id="stone-texture" src="assets/moreyellow.jpg">
       <a-asset-item id="SpookyTree" src="assets/Tree_Spooky2_Low.obj"></a-asset-item>
       <img id="TreeTexture" src="assets/glowpattern.jpg">
+      <a-asset-item id="Tree" src="assets/TR_01_autumn.obj"></a-asset-item>
+      <img id="GreenTree" src="assets/GreenTreeTexture.jpg">
 
     </a-assets>
 
     <a-sky src="assets/GlowingForest.jpg"></a-sky>
 
-    <a-obj-model src="#SpookyTree" position="3 -3 8" scale="0.2 0.4 0.2" material="src: #TreeTexture"></a-obj-model>
+    <a-entity position="0 2.25 -15" particle-system="color: #EF0000,#44CC00"></a-entity>
+
     
+    <a-obj-model src="#Tree" position="80 -7 75" scale="0.4 0.7 0.4" rotation="0 45 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-85 -7 70" scale="0.42 0.72 0.42" rotation="0 120 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="78 -7 -80" scale="0.38 0.68 0.38" rotation="0 200 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-90 -7 -75" scale="0.41 0.71 0.41" rotation="0 315 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="95 -7 20" scale="0.39 0.69 0.39" rotation="0 85 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-80 -7 85" scale="0.43 0.73 0.43" rotation="0 270 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="75 -7 -65" scale="0.37 0.67 0.37" rotation="0 160 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-88 -7 -60" scale="0.40 0.70 0.40" rotation="0 230 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="92 -7 -30" scale="0.41 0.71 0.41" rotation="0 340 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-75 -7 80" scale="0.38 0.68 0.38" rotation="0 55 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="85 -7 -45" scale="0.42 0.72 0.42" rotation="0 175 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-95 -7 35" scale="0.39 0.69 0.39" rotation="0 290 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="70 -7 82" scale="0.40 0.70 0.40" rotation="0 100 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-82 -7 -70" scale="0.43 0.73 0.43" rotation="0 245 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="88 -7 55" scale="0.37 0.67 0.37" rotation="0 15 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-78 -7 -78" scale="0.41 0.71 0.41" rotation="0 135 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="82 -7 -55" scale="0.38 0.68 0.38" rotation="0 210 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-92 -7 50" scale="0.42 0.72 0.42" rotation="0 325 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="77 -7 68" scale="0.39 0.69 0.39" rotation="0 70 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-87 -7 -82" scale="0.40 0.70 0.40" rotation="0 185 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="90 -7 -70" scale="0.43 0.73 0.43" rotation="0 255 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-72 -7 72" scale="0.37 0.67 0.37" rotation="0 30 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="96 -7 10" scale="0.41 0.71 0.41" rotation="0 145 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="-70 -7 90" scale="0.38 0.68 0.38" rotation="0 260 0" material="src: #GreenTree"></a-obj-model>
+    <a-obj-model src="#Tree" position="73 -7 -75" scale="0.40 0.70 0.40" rotation="0 95 0" material="src: #GreenTree"></a-obj-model>
+
+    <a-obj-model src="#SpookyTree" position="3 -3 8" scale="0.2 0.4 0.2" material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="7 -3 8" scale="0.2 0.4 0.2" material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-11 -3 18" scale="0.25 0.5 0.25" rotation="0 45 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="19 -3 -13" scale="0.18 0.35 0.18" rotation="0 120 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-23 -3 -18" scale="0.22 0.45 0.22" rotation="0 280 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="34 -3 28" scale="0.19 0.38 0.19" rotation="0 170 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-38 -3 33" scale="0.23 0.42 0.23" rotation="0 95 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="43 -3 -32" scale="0.21 0.4 0.21" rotation="0 215 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-28 -3 43" scale="0.24 0.48 0.24" rotation="0 340 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="28 -3 -40" scale="0.2 0.37 0.2" rotation="0 55 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-45 -3 -23" scale="0.26 0.5 0.26" rotation="0 190 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="49 -3 18" scale="0.17 0.33 0.17" rotation="0 305 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-18 -3 -41" scale="0.22 0.43 0.22" rotation="0 80 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="38 -3 47" scale="0.2 0.39 0.2" rotation="0 230 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-50 -3 8" scale="0.25 0.47 0.25" rotation="0 150 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="15 -3 -31" scale="0.19 0.36 0.19" rotation="0 270 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-33 -3 -45" scale="0.23 0.44 0.23" rotation="0 25 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="50 -3 -8" scale="0.21 0.41 0.21" rotation="0 135 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-13 -3 50" scale="0.24 0.46 0.24" rotation="0 200 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="23 -3 38" scale="0.18 0.34 0.18" rotation="0 315 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-41 -3 -38" scale="0.22 0.42 0.22" rotation="0 110 0"
+      material="src: #TreeTexture"></a-obj-model>
+
+    <a-obj-model src="#SpookyTree" position="60 -3 55" scale="0.28 0.55 0.28" rotation="0 145 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-65 -3 48" scale="0.26 0.52 0.26" rotation="0 75 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="58 -3 -60" scale="0.3 0.58 0.3" rotation="0 220 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-70 -3 -55" scale="0.27 0.54 0.27" rotation="0 330 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="75 -3 10" scale="0.25 0.5 0.25" rotation="0 180 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-58 -3 65" scale="0.29 0.56 0.29" rotation="0 95 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="55 -3 -45" scale="0.24 0.48 0.24" rotation="0 265 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-62 -3 -70" scale="0.31 0.6 0.31" rotation="0 40 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="68 -3 -25" scale="0.26 0.51 0.26" rotation="0 155 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-55 -3 -40" scale="0.28 0.55 0.28" rotation="0 310 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="52 -3 70" scale="0.27 0.53 0.27" rotation="0 125 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-72 -3 20" scale="0.3 0.57 0.3" rotation="0 200 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="65 -3 -50" scale="0.25 0.49 0.25" rotation="0 85 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="-60 -3 58" scale="0.29 0.56 0.29" rotation="0 245 0"
+      material="src: #TreeTexture"></a-obj-model>
+    <a-obj-model src="#SpookyTree" position="70 -3 35" scale="0.26 0.52 0.26" rotation="0 170 0"
+      material="src: #TreeTexture"></a-obj-model>
+
+
+
 
 
 
@@ -293,7 +397,7 @@
       material="src: #cyan-texture"></a-obj-model>
 
 
-</a-scene>
+  </a-scene>
 </body>
 
 </html>
